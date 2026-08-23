@@ -1,4 +1,4 @@
-import { FileText, Github, Mail } from "lucide-react";
+import { FileText, Github } from "lucide-react";
 import { useState } from "react";
 import { competitions } from "../data/competitions";
 import { profile } from "../data/profile";
@@ -35,7 +35,6 @@ export default function Hero() {
           <div className="mt-6 flex flex-wrap gap-2.5">
             <a href={assetPath(profile.cv)} target="_blank" rel="noreferrer" className="focus-ring inline-flex items-center gap-2 rounded-md bg-academic-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-academic-700"><FileText size={16} />个人简历</a>
             {githubReady && <a href={profile.github} target="_blank" rel="noreferrer" className="focus-ring inline-flex items-center gap-2 rounded-md border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-academic-600 hover:text-academic-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200 dark:hover:border-blue-400 dark:hover:text-blue-400"><Github size={16} />GitHub</a>}
-            <a href={`mailto:${profile.email}`} className="focus-ring inline-flex items-center gap-2 rounded-md border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-academic-600 hover:text-academic-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200 dark:hover:border-blue-400 dark:hover:text-blue-400"><Mail size={16} />联系我</a>
           </div>
         </div>
         <div className="mx-auto w-full max-w-[220px] sm:max-w-[235px] md:max-w-none">
