@@ -40,9 +40,8 @@ export const researchInterests: ResearchInterest[] = [
 ];
 
 export const skillGroups = [
-  { title: "编程语言", items: ["C / C++", "Python", "Java"] },
-  { title: "计算机视觉", items: ["YOLO", "OpenCV", "ByteTrack", "ArcFace", "Kalman Filter", "目标检测", "多目标跟踪"] },
-  { title: "机器学习", items: ["PyTorch", "迁移学习", "模型训练", "模型评估", "数据增强"] },
-  { title: "多模态与大模型", items: ["RAG", "向量检索", "多模态分析"] },
-  { title: "工程实践", items: ["UDP 通信", "多线程", "Qt", "Git", "Linux"] },
+  { title: "视觉检测与识别", items: ["YOLOv5", "ArcFace", "OpenCV", "目标检测", "小目标识别"] },
+  { title: "模型训练与实验", items: ["PyTorch", "VisDrone", "迁移学习", "数据增强", "模型评估"] },
+  { title: "跟踪与控制", items: ["Kalman Filter", "轨迹预测", "PID 控制"] },
+  { title: "工程开发", items: ["Python", "C++", "Qt", "UDP 通信", "多线程"] },
 ] as const;

@@ -23,6 +23,12 @@ const orderedCompetitions = [...competitions].sort(
 
 const representativeIds = new Set(prestigeOrder.slice(0, 6));
 
+function displayAward(award: string, index: number) {
+  if (index < 2) return award;
+  const level = award.match(/[一二三]等奖/)?.[0];
+  return level ? `全国${level}` : award;
+}
+
 export default function Competitions() {
   return (
     <Section id="competitions" eyebrow="Competitions" title="竞赛获奖" intro="按赛事代表性与奖项等级排列，完整保留全部国家级竞赛成果。" className="border-y border-slate-200/80 bg-slate-50/60 dark:border-slate-800 dark:bg-slate-900/35">
@@ -44,7 +50,7 @@ export default function Competitions() {
               <p className="mt-0.5 text-xs leading-5 text-slate-500">{item.category}{item.privacyNote ? ` · ${item.privacyNote}` : ""}</p>
             </div>
             <div className="flex items-center gap-3 sm:block sm:text-right">
-              <p className="text-[13px] font-semibold text-slate-800 dark:text-slate-200">{item.award}</p>
+              <p className="text-[13px] font-semibold text-slate-800 dark:text-slate-200">{displayAward(item.award, index)}</p>
               <p className="mt-0.5 inline-flex items-center gap-1 text-xs text-slate-400 sm:justify-end">{item.teamType === "团队" ? <UsersRound size={12} /> : <UserRound size={12} />}{item.teamType} · {item.year}</p>
             </div>
             <div className="justify-self-start sm:justify-self-end"><ProofViewer proof={item.proof} label="查看证明" /></div>
