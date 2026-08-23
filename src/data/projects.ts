@@ -22,7 +22,7 @@ export const projects: Project[] = [
       "完成UDP视频传输、地面端可视化及多线程优化，并开展多场景测试与系统迭代，提升系统稳定性与实时性。",
     ],
     pipeline: ["人体检测", "身份识别", "轨迹预测", "飞控跟踪", "地面端展示"],
-    tech: ["YOLOv5", "ArcFace", "OpenCV", "Kalman Filter", "PID", "UDP", "Qt", "Multithreading"],
+    tech: ["YOLOv5", "ArcFace", "OpenCV", "Kalman Filter", "PID Control", "UDP", "Qt", "Multithreading", "Python"],
     outcome: "省级大创顺利结项｜软件著作权1项",
   },
   {
@@ -36,7 +36,7 @@ export const projects: Project[] = [
       "结合Mosaic数据增强与图像去雾优化检测效果，完成模型验证、性能评估及最优权重筛选。",
     ],
     pipeline: ["VisDrone数据处理", "迁移学习", "多分辨率实验", "性能优化", "权重筛选"],
-    tech: ["VisDrone", "数据处理", "迁移学习", "小目标检测", "多分辨率对比实验", "Mosaic", "图像去雾", "性能优化"],
+    tech: ["YOLO26", "VisDrone", "PyTorch", "OpenCV", "迁移学习", "Mosaic", "多分辨率对比实验"],
     outcome: "第二十一届全国大学生交通运输科技大赛国家三等奖",
   },
 ];
