@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>任磊康 | 个人学术主页</title>
+    <meta name="description" content="任磊康，石家庄铁道大学计算机科学与技术专业本科生，研究兴趣包括计算机视觉、无人机视觉感知、目标检测与跟踪、多模态学习等。" />
+    <meta name="keywords" content="任磊康, Leikang Ren, 计算机视觉, 无人机视觉, 目标检测, 目标跟踪, 多模态学习, 石家庄铁道大学" />
+    <meta name="author" content="任磊康" />
+    <meta name="theme-color" content="#f8fafc" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="任磊康 | 个人学术主页" />
+    <meta property="og:description" content="石家庄铁道大学计算机科学与技术专业本科生，关注计算机视觉、无人机视觉感知、目标检测与跟踪、多模态学习。" />
+    <meta property="og:image" content="./images/profile.jpg" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <script>
+      (() => {
+        const saved = localStorage.getItem('theme');
+        const dark = saved ? saved === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.classList.toggle('dark', dark);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
