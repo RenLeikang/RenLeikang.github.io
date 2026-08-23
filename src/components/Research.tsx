@@ -6,16 +6,20 @@ const icons = { scan: ScanSearch, drone: Focus, tracking: Sparkles, layers: Laye
 
 export default function Research() {
   return (
-    <Section id="research" eyebrow="Research Interests" title="研究方向" intro="围绕无人机与复杂真实场景中的可靠视觉感知开展学习与实践，并进一步关注多模态理解与视觉语言智能。" className="border-y border-slate-200/80 bg-slate-50/70 dark:border-slate-800 dark:bg-slate-900/35">
-      <div className="mt-8 grid gap-px overflow-hidden rounded-xl border border-slate-200 bg-slate-200 sm:grid-cols-2 lg:grid-cols-3 dark:border-slate-800 dark:bg-slate-800">
+    <Section id="research" eyebrow="Research" title="研究方向" intro="围绕无人机与复杂真实场景中的可靠视觉感知开展学习与实践，并进一步关注多模态理解与视觉语言智能。" className="border-y border-slate-200/80 bg-slate-50/60 dark:border-slate-800 dark:bg-slate-900/35">
+      <div className="section-content grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {researchInterests.map((item) => {
           const Icon = icons[item.icon];
           return (
-            <article key={item.title} className="group bg-white p-6 transition hover:bg-slate-50 dark:bg-slate-950 dark:hover:bg-slate-900">
-              <Icon size={22} strokeWidth={1.7} className="text-academic-600 transition group-hover:-translate-y-0.5 dark:text-blue-400" />
-              <h3 className="mt-5 text-base font-semibold text-slate-900 dark:text-white">{item.title}</h3>
-              <p className="mt-1 text-xs font-medium text-slate-400">{item.englishTitle}</p>
-              <p className="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-400">{item.description}</p>
+            <article key={item.title} className="card group p-5 transition hover:border-slate-300 dark:hover:border-slate-700">
+              <div className="flex items-start gap-3.5">
+                <Icon size={19} strokeWidth={1.7} className="mt-0.5 shrink-0 text-academic-600/80 dark:text-blue-400" />
+                <div>
+                  <h3 className="text-base font-semibold text-slate-900 dark:text-white">{item.title}</h3>
+                  <p className="mt-0.5 text-xs font-medium text-slate-400">{item.englishTitle}</p>
+                  <p className="mt-2 text-[14px] leading-6 text-slate-600 dark:text-slate-400">{item.description}</p>
+                </div>
+              </div>
             </article>
           );
         })}

@@ -19,12 +19,12 @@ export default function ProofViewer({ proof, label = "查看证明" }: { proof: 
   }, [open]);
 
   if (proof.type !== "image") {
-    return <a href={url} target="_blank" rel="noreferrer" className="focus-ring inline-flex shrink-0 items-center gap-1.5 rounded-md border border-slate-200 px-3 py-1.5 text-xs font-semibold text-slate-600 transition hover:border-academic-600 hover:text-academic-600 dark:border-slate-700 dark:text-slate-300 dark:hover:border-blue-400 dark:hover:text-blue-400">{label}<ExternalLink size={13} /></a>;
+    return <a href={url} target="_blank" rel="noreferrer" className="focus-ring link-academic inline-flex shrink-0 items-center gap-1 rounded">{label}<ExternalLink size={13} /></a>;
   }
 
   return (
     <>
-      <button type="button" onClick={() => setOpen(true)} className="focus-ring inline-flex shrink-0 items-center gap-1.5 rounded-md border border-slate-200 px-3 py-1.5 text-xs font-semibold text-slate-600 transition hover:border-academic-600 hover:text-academic-600 dark:border-slate-700 dark:text-slate-300 dark:hover:border-blue-400 dark:hover:text-blue-400">{label}</button>
+      <button type="button" onClick={() => setOpen(true)} className="focus-ring link-academic inline-flex shrink-0 items-center gap-1 rounded">{label}<ExternalLink size={13} /></button>
       {open && (
         <div role="dialog" aria-modal="true" aria-label="获奖证明预览" onClick={() => setOpen(false)} className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/85 p-4 backdrop-blur-sm">
           <div onClick={(event) => event.stopPropagation()} className="relative flex max-h-[92vh] max-w-5xl flex-col overflow-hidden rounded-xl bg-white shadow-2xl dark:bg-slate-900">

@@ -3,12 +3,12 @@ import Section from "./Section";
 
 export default function Skills() {
   return (
-    <Section id="skills" eyebrow="Technical Skills" title="个人技能" intro="在课程学习、算法竞赛、模型实验与工程项目中实际使用过的工具和方法。" className="border-y border-slate-200/80 bg-slate-50/70 dark:border-slate-800 dark:bg-slate-900/35">
-      <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-        {skillGroups.map((group, index) => (
-          <article key={group.title} className={`rounded-xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-slate-950 ${index === 1 ? "lg:row-span-2" : ""}`}>
+    <Section id="skills" eyebrow="Skills" title="个人技能" intro="在课程学习、算法竞赛、模型实验与工程项目中实际使用过的工具和方法。" className="border-y border-slate-200/80 bg-slate-50/60 dark:border-slate-800 dark:bg-slate-900/35">
+      <div className="section-content grid gap-x-8 gap-y-5 sm:grid-cols-2 lg:grid-cols-3">
+        {skillGroups.map((group) => (
+          <article key={group.title} className="border-t border-slate-200 pt-3.5 dark:border-slate-800">
             <h3 className="text-sm font-semibold text-slate-900 dark:text-white">{group.title}</h3>
-            <div className="mt-4 flex flex-wrap gap-2">{group.items.map((item) => <span key={item} className="tag">{item}</span>)}</div>
+            <p className="mt-1.5 text-[13.5px] leading-6 text-slate-500 dark:text-slate-400">{group.items.join(" · ")}</p>
           </article>
         ))}
       </div>
