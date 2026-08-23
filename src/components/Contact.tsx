@@ -11,7 +11,7 @@ export default function Contact() {
     { label: "个人简历", value: "查看 PDF", href: assetPath(profile.cv), icon: FileText, ready: true },
   ];
   return (
-    <Section id="contact" eyebrow="Contact" title="联系方式" intro="我希望进一步学习计算机视觉、无人机视觉感知与多模态学习等方向，欢迎就科研学习与项目合作进行交流。">
+    <Section id="contact" eyebrow="Contact" title="联系方式" intro="我希望进一步学习计算机视觉、无人机视觉感知、目标检测与跟踪等方向，欢迎就科研学习与项目合作进行交流。">
       <div className="section-content grid border-y border-slate-200 sm:grid-cols-3 sm:divide-x sm:divide-slate-200 dark:border-slate-800 dark:sm:divide-slate-800">
         {contacts.map(({ label, value, href, icon: Icon, ready }) => (
           <a key={label} href={href} target={label === "邮箱" ? undefined : "_blank"} rel="noreferrer" onClick={(event) => !ready && event.preventDefault()} className={`focus-ring group flex items-start gap-3 border-b border-slate-200 px-1 py-5 transition last:border-b-0 sm:border-b-0 sm:px-5 sm:first:pl-0 dark:border-slate-800 ${ready ? "hover:text-academic-600" : "cursor-not-allowed opacity-60"}`}>

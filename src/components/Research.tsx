@@ -1,12 +1,12 @@
-import { Bot, Focus, Layers3, ScanSearch, Sparkles } from "lucide-react";
+import { Focus, ScanSearch, Sparkles } from "lucide-react";
 import { researchInterests } from "../data/profile";
 import Section from "./Section";
 
-const icons = { scan: ScanSearch, drone: Focus, tracking: Sparkles, layers: Layers3, language: Bot };
+const icons = { scan: ScanSearch, drone: Focus, tracking: Sparkles };
 
 export default function Research() {
   return (
-    <Section id="research" eyebrow="Research" title="研究方向" intro="围绕无人机与复杂真实场景中的可靠视觉感知开展学习与实践，并进一步关注多模态理解与视觉语言智能。" className="border-y border-slate-200/80 bg-slate-50/60 dark:border-slate-800 dark:bg-slate-900/35">
+    <Section id="research" eyebrow="Research" title="研究方向" intro="研究兴趣来源于现有项目实践，主要聚焦无人机航拍场景中的目标检测、视觉跟踪与小目标识别。" className="border-y border-slate-200/80 bg-slate-50/60 dark:border-slate-800 dark:bg-slate-900/35">
       <div className="section-content grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {researchInterests.map((item) => {
           const Icon = icons[item.icon];

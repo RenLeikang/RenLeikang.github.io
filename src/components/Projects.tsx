@@ -5,7 +5,7 @@ import Section from "./Section";
 
 export default function Projects() {
   return (
-    <Section id="projects" eyebrow="Projects" title="项目经历" intro="围绕无人机视觉、小目标检测、目标跟踪与多模态视频分析开展的代表性工程项目和实验。">
+    <Section id="projects" eyebrow="Projects" title="项目经历" intro="围绕无人机视觉、小目标检测与目标跟踪开展的代表性工程项目和实验。">
       <div className="section-content space-y-5">
         {projects.map((project, index) => (
           <article key={project.title} className="card grid gap-6 p-5 transition hover:border-slate-300 hover:shadow-sm sm:p-6 lg:grid-cols-[0.7fr_1.3fr] lg:items-start dark:hover:border-slate-700">
