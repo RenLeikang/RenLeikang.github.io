@@ -6,7 +6,7 @@ const icons = { scan: ScanSearch, drone: Focus, tracking: Sparkles };
 
 export default function Research() {
   return (
-    <Section id="research" eyebrow="Research" title="研究方向" intro="研究兴趣来源于现有项目实践，主要聚焦无人机航拍场景中的目标检测、视觉跟踪与小目标识别。" className="border-y border-slate-200/80 bg-slate-50/60 dark:border-slate-800 dark:bg-slate-900/35">
+    <Section id="research" eyebrow="Research" title="研究方向" intro="主要关注无人机视觉感知、目标检测与跟踪以及航拍小目标检测。" className="border-y border-slate-200/80 bg-slate-50/60 dark:border-slate-800 dark:bg-slate-900/35">
       <div className="section-content grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {researchInterests.map((item) => {
           const Icon = icons[item.icon];

@@ -3,8 +3,8 @@ import Section from "./Section";
 
 export default function Skills() {
   return (
-    <Section id="skills" eyebrow="Skills" title="个人技能" intro="在课程学习、算法竞赛、模型实验与工程项目中实际使用过的工具和方法。" className="border-y border-slate-200/80 bg-slate-50/60 dark:border-slate-800 dark:bg-slate-900/35">
-      <div className="section-content grid gap-x-8 gap-y-5 sm:grid-cols-2 lg:grid-cols-3">
+    <Section id="skills" eyebrow="Skills" title="个人技能" className="border-y border-slate-200/80 bg-slate-50/60 dark:border-slate-800 dark:bg-slate-900/35">
+      <div className="section-content grid gap-x-8 gap-y-5 sm:grid-cols-2 lg:grid-cols-4">
         {skillGroups.map((group) => (
           <article key={group.title} className="border-t border-slate-200 pt-3.5 dark:border-slate-800">
             <h3 className="text-sm font-semibold text-slate-900 dark:text-white">{group.title}</h3>

@@ -5,7 +5,7 @@ import Section from "./Section";
 
 export default function Honors() {
   return (
-    <Section id="honors" eyebrow="Honors" title="荣誉与奖学金" intro="综合展示奖学金、个人与集体荣誉，以及本科期间承担的学生工作。">
+    <Section id="honors" eyebrow="Honors" title="荣誉与奖学金">
       <div className="section-content grid gap-x-8 border-y border-slate-200 sm:grid-cols-2 dark:border-slate-800">
         {honors.map((honor) => (
           <article key={honor.id} className="flex min-h-[92px] items-start justify-between gap-4 border-b border-slate-200 py-4.5 dark:border-slate-800">

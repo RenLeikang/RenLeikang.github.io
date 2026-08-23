@@ -4,8 +4,8 @@ import { profile } from "../data/profile";
 import { useDarkMode } from "../hooks/useDarkMode";
 
 const links = [
-  ["首页", "home"], ["关于我", "about"], ["研究方向", "research"], ["项目经历", "projects"],
-  ["竞赛获奖", "competitions"], ["荣誉奖学金", "honors"], ["个人技能", "skills"], ["联系方式", "contact"],
+  ["首页", "home"], ["研究方向", "research"], ["项目经历", "projects"],
+  ["竞赛获奖", "competitions"], ["荣誉", "honors"], ["联系方式", "contact"],
 ] as const;
 
 export default function Navbar() {

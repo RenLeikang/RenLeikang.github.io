@@ -19,14 +19,13 @@ export const profile = {
   gpa: "3.64 / 4.0",
   ranking: "",
   email: "renlk2005@163.com",
-  github: "YOUR_GITHUB_URL",
+  github: "",
   cv: "/files/CV.pdf",
   photo: "/images/profile.jpg",
   intro: "石家庄铁道大学计算机科学与技术专业本科生。目前主要围绕计算机视觉、无人机视觉感知、目标检测与跟踪，以及航拍场景下的小目标检测开展项目实践。",
   about: [
-    "我目前就读于石家庄铁道大学信息科学与技术学院计算机科学与技术专业，学习和项目经历主要围绕计算机视觉与智能感知展开。",
-    "本科期间，我持续参加算法竞赛与工程项目，在数据结构与算法、模型训练、计算机视觉系统和软件工程实践等方面积累了较为系统的经验。",
-    "我希望在已有无人机视觉、目标检测与跟踪实践的基础上，进一步学习复杂航拍场景中的小目标检测、视觉跟踪与智能感知方法。",
+    "我目前就读于石家庄铁道大学信息科学与技术学院计算机科学与技术专业，主要关注计算机视觉、无人机视觉感知、目标检测与跟踪以及航拍小目标检测。",
+    "本科期间，我持续参加算法竞赛与计算机视觉项目实践，在数据结构与算法、模型训练和视觉系统开发等方面积累了经验，并曾担任信2301-4班班长。",
   ],
   interestLine: ["计算机视觉", "无人机视觉感知", "目标检测与跟踪", "航拍小目标检测"],
 } as const;
@@ -39,8 +38,8 @@ export const researchInterests: ResearchInterest[] = [
 ];
 
 export const skillGroups = [
-  { title: "视觉检测与识别", items: ["YOLOv5", "ArcFace", "OpenCV", "目标检测", "小目标识别"] },
-  { title: "模型训练与实验", items: ["PyTorch", "VisDrone", "迁移学习", "数据增强", "模型评估"] },
-  { title: "跟踪与控制", items: ["Kalman Filter", "轨迹预测", "PID 控制"] },
-  { title: "工程开发", items: ["Python", "C++", "Qt", "UDP 通信", "多线程"] },
+  { title: "编程语言", items: ["C / C++", "Python"] },
+  { title: "视觉与深度学习", items: ["PyTorch", "YOLOv5", "OpenCV", "ArcFace"] },
+  { title: "目标跟踪与控制", items: ["Kalman Filter", "PID"] },
+  { title: "工程开发", items: ["Qt", "UDP", "Multithreading"] },
 ] as const;
